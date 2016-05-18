@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="style/style.css">
 
   <!-- scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js'></script>
+  <script src='javascripts/app.js'></script>
 
 </head>
 <body>
@@ -23,49 +24,88 @@
       <div class='nav'>
         <ul>
           <li>Home</li>
-          <li>About</li>
+          <li><a href="#about">About</a></li>
         </ul>
       </div>
   </header>
 
   <main>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="">
+      <img src="Images/Bubbles.png" alt="" id='project1'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="">
+      <img src="Images/HQ.png" alt="" id='project2'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="">
+      <img src="Images/Bubbles.png" alt="" id='project3'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="">
+      <img src="Images/HQ.png" alt="" id='project4'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="">
+      <img src="Images/Bubbles.png" alt="" id='project5'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="">
+      <img src="Images/HQ.png" alt="" id='project6'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="">
+      <img src="Images/Bubbles.png" alt="" id='project7'>
       <h3>Project Name</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="">
+      <img src="Images/HQ.png" alt="" id='project8'>
       <h3>Project Name</h3>
     </div>
-
   </main>
 
-  <div class='about'>
+  <!-- project modals -->
+  <div class='modal' id='project1Modal'>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project2Modal'>
+    <h3>Project two</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project3Modal'>
+    <h3>Project three</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project4Modal'>
+    <h3>Project four</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project5Modal'>
+    <h3>Project five</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project6Modal'>
+    <h3>Project six</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project7Modal'>
+    <h3>Project seven</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
+  <div class='modal' id='project8Modal'>
+    <h3>Project eight</h3>
+    <img src="Images/delete.png" alt="" class='close'>
+  </div>
 
+
+  <div class='about'>
+    <a name='about'></a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ab quasi repellendus, alias quae minima necessitatibus provident rerum quisquam, vel deleniti molestiae nemo ducimus temporibus quos, harum ipsa debitis officia!
+    </p>
   </div>
 
 </body>
