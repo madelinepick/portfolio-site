@@ -15,7 +15,7 @@
 
 </head>
 <body>
-  <header>
+  <header id='#home'>
     <img src="Images/logo1.png" alt="" class='logo'>
       <div class='title'>
         <h1>Madeline Pickering</h1>
@@ -23,44 +23,43 @@
       </div>
       <div class='nav'>
         <ul>
-          <li>Home</li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about" class='clickabout'>About</a></li>
         </ul>
       </div>
   </header>
 
   <main>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="" id='project1'>
-      <h3>Project Name</h3>
+      <img src="Images/rosalind.jpg" alt="" id='project1'>
+      <h3>Rosalind // Full Stack</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="" id='project2'>
-      <h3>Project Name</h3>
+      <img src="Images/trainingpeaks.jpg" alt="" id='project2'>
+      <h3>TP Redesign // UX/UI Design</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="" id='project3'>
-      <h3>Project Name</h3>
+      <img src="Images/fuelmapper.jpg" alt="" id='project3'>
+      <h3>Fuelmapper // Front End</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="" id='project4'>
-      <h3>Project Name</h3>
+      <img src="Images/EFK.jpg" alt="" id='project4'>
+      <h3>EFK Group // UI Design</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="" id='project5'>
-      <h3>Project Name</h3>
+      <img src="Images/HQ.png" alt="" id='project5'>
+      <h3>HQ // Angular</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="" id='project6'>
-      <h3>Project Name</h3>
+      <img src="Images/Bubbles.png" alt="" id='project6'>
+      <h3>Bubbles // Full Stack</h3>
     </div>
     <div class='project'>
-      <img src="Images/Bubbles.png" alt="" id='project7'>
-      <h3>Project Name</h3>
+      <img src="Images/dojo4.jpg" alt="" id='project7'>
+      <h3>DOJO4 // UI Design</h3>
     </div>
     <div class='project'>
-      <img src="Images/HQ.png" alt="" id='project8'>
-      <h3>Project Name</h3>
+      <img src="Images/wordup.jpg" alt="" id='project8'>
+      <h3>Word Up // UI Design</h3>
     </div>
   </main>
 
@@ -72,41 +71,98 @@
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project2Modal'>
-    <h3>Project two</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project3Modal'>
-    <h3>Project three</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project4Modal'>
-    <h3>Project four</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project5Modal'>
-    <h3>Project five</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project6Modal'>
-    <h3>Project six</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project7Modal'>
-    <h3>Project seven</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
   <div class='modal' id='project8Modal'>
-    <h3>Project eight</h3>
+    <div class='inlay'>
+      <h3>Project one</h3>
+    </div>
     <img src="Images/delete.png" alt="" class='close'>
   </div>
 
 
-  <div class='about'>
-    <a name='about'></a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ab quasi repellendus, alias quae minima necessitatibus provident rerum quisquam, vel deleniti molestiae nemo ducimus temporibus quos, harum ipsa debitis officia!
-    </p>
+  <div id='about'>
+    <h2 class='all'>ABOUT ME</h2>
+    <div class='me'>
+      <p>I'm a UX/UI designer and developer. I want to use my skills to make web apps that inspire positive behavior change.</p>
+      <p>I'm based in Boulder, Colorado on the weekdays and in my Honda Element on the weekends.</p>
+      <p>I like to climb, swim+bike+run, write novels, and dance like no one is watching.</p>
+      <p>Feel free to view my resume or email me at madelinepickering at gmail.com.</p>
+    </div>
+    <div class='links'>
+      <div class='linkschunk'>
+        <a href=""><button>Send me a message</button></a>
+        <a href=""><button>Github</button></a>
+        <a href=""><button>Linkedin</button></a>
+      </div>
+    </div>
+    <section class='green'>
+      <h3>Technologies I love</h3>
+      <ul>
+        <li>Angular</li>
+        <li>Node</li>
+        <li>Exliress</li>
+        <li>CSS/SCSS</li>
+        <li>Git/github</li>
+        <li>Knex</li>
+        <li>Postgres</li>
+        <li>Handlebars</li>
+        <li>D3</li>
+      </ul>
+    </section>
+    <section class='blue'>
+      <h3>Methods I love</h3>
+      <ul>
+        <li>TDD</li>
+        <li>Mobile-first</li>
+        <li>UCD</li>
+        <li>Continual user testing</li>
+      </ul>
+    </section>
+    <section class='yellow'>
+      <h3 class='left'>Things I can do for you</h3>
+        <p>Design and build a MEAN web app (or any portion of)</p>
+        <p>Design a user interface</p>
+        <p>Design and build a website for a small business</p>
+        <p>Harness user testing to design a user exlierience</p>
+    </section>
   </div>
 
+  <footer>
+    <p>Copyright Madeline Pickering, forever</p>
+  </footer>
 </body>
 </html>
