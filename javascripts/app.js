@@ -6,6 +6,12 @@ $(function() {
         }, 1000);
     });
   }
+  // 
+  // $(window).scroll(function() {
+  //     if ($(this).scrollTop() >= ($('#about').position().top-100)) {
+  //         $('#about').addClass('skew');
+  //     }
+  //   });
 
   $('.clickabout').on('click', function(event){
     event.preventDefault();
