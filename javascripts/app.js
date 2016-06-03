@@ -1,4 +1,5 @@
 $(function() {
+
   $.fn.scrollView = function () {
     return this.each(function () {
         $('html, body').animate({
@@ -6,12 +7,6 @@ $(function() {
         }, 1000);
     });
   }
-  // 
-  // $(window).scroll(function() {
-  //     if ($(this).scrollTop() >= ($('#about').position().top-100)) {
-  //         $('#about').addClass('skew');
-  //     }
-  //   });
 
   $('.clickabout').on('click', function(event){
     event.preventDefault();
@@ -23,6 +18,9 @@ $(function() {
     $(modal).show();
   })
   $('.close').on('click', function(){
+    $('.modal').hide();
+  })
+  $('.modal').on('click', function(){
     $('.modal').hide();
   })
 });

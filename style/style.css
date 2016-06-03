@@ -8,7 +8,7 @@ h1 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -80,7 +80,7 @@ main {
 }
 .logo {
   width: auto;
-  height: 120px;
+  height: 10vw;
   display: inline-block;
   vertical-align: middle;
 }
@@ -170,7 +170,7 @@ h2 {
 }
 section > h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -206,9 +206,9 @@ section > ul > li {
 }
 .inlay {
   width: 80%;
-  margin: 100px 10%;
+  margin: 100px 8%;
   background-color: white;
-  padding: 20px;
+  padding: 2%;
 }
 .inlayText {
   display: inline-block;
@@ -223,9 +223,6 @@ section > ul > li {
   width: 20px;
   height: auto;
   float:right;
-  /*position: fixed;
-  top: 20px;
-  right: 20px;*/
 }
 footer > p {
   padding: 10px 0px;
@@ -260,4 +257,118 @@ button:hover {
 }
 .linkschunk {
   align-self: center;
+}
+
+/* large*/
+@media only screen and (max-width: 900px) {
+  .me > p, section > p, section > ul > li {
+    font-size: 14px;
+  }
+  section > h3 {
+    font-size: 16px;
+  }
+  .project > h3 {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  button {
+    width: 150px;
+    height:40px;
+    font-size: 10px;
+  }
+  .project {
+    flex: 0 0 32%;
+  }
+}
+/* medium*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  section > h3 {
+    font-size: 15px;
+  }
+  section {
+    flex: 0 0 97%;
+  }
+  button {
+    width: 120px;
+    height:35px;
+    font-size: 9px;
+  }
+  .inlayText {
+    width: 100%;
+  }
+  .modalHero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .inlayText > p {
+    font-size: 14px;
+  }
+}
+/* small*/
+@media only screen and (max-width: 480px) {
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .project {
+    flex: 0 0 48%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .me {
+    flex: 0 0 96%;
+    margin-bottom: 0px;
+  }
+  .me > p, section > p {
+    font-size: 14px;
+    width: 90%;
+  }
+  .links {
+    flex: 0 0 96%;
+    padding-left: 1%;
+    margin-left: 1%;
+    margin-top: 0px;
+  }
+  .modalHero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+  .inlayText > p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .close {
+    width: 15px;
+  }
 }
