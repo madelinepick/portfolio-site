@@ -27,6 +27,14 @@ h4 {
   text-transform: uppercase;
   color: rgb(140, 140, 140);
 }
+.me > h5 {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgb(139, 139, 139);
+  padding: 2%;
+  width: 96%;
+}
 li {
   list-style: none;
   display: inline;
@@ -161,7 +169,7 @@ section > p {
 }
 .me > p {
   padding: 2%;
-  width: 100%;
+  width: 96%;
 }
 h2 {
   font-size: 24px;
