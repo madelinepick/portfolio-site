@@ -223,6 +223,7 @@ section > ul > li {
   width: 20px;
   height: auto;
   float:right;
+  cursor: pointer;
 }
 footer > p {
   padding: 10px 0px;
