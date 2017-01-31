@@ -16,7 +16,7 @@ h3 {
   font-size: 15px;
   text-align: center;
   margin: 5px;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
 }
 h4 {
@@ -25,13 +25,13 @@ h4 {
   margin-top: 10px;
   margin-bottom: 0px;
   text-transform: uppercase;
-  color: rgb(140, 140, 140);
+  color: rgb(70, 70, 70);
 }
 .me > h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: rgb(139, 139, 139);
+  color: rgb(105, 105, 105);
   padding: 2%;
   width: 96%;
 }
@@ -44,9 +44,10 @@ li {
   font-weight: 300;
 }
  a {
-   color: rgb(161, 159, 157);
+   color: #50C3E0;
    font-family: 'Lato', sans-serif;
    text-decoration: none;
+   display: inline-block;
  }
 header {
   margin: 60px 60px;
@@ -136,19 +137,15 @@ main {
   z-index: -1;
 }*/
 .me {
-  flex: 0 0 56%;
+  flex: 0 0 95%;
   background-color: white;
-  padding-left: 1%;
-  margin-left: 1%;
-  margin-bottom: 1%;
+  padding: 1%;
+  margin: 1%;
+  -webkit-box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
+  -moz-box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
+  box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
 }
-.links {
-  flex: 0 0 40%;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  margin-bottom: 1%;
-}
+
 section {
   flex: 0 0 31%;
   background-color: white;
@@ -157,6 +154,9 @@ section {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
+  -moz-box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
+  box-shadow: 3px 3px 15px 1px rgba(66,66,66,.5);
 }
 section > p, .me > p {
   padding: 10px 0px;
@@ -168,7 +168,7 @@ section > p {
   margin: 0px;
 }
 .me > p {
-  padding: 2%;
+  padding: 1% 2%;
   width: 96%;
 }
 h2 {
@@ -217,6 +217,7 @@ section > ul > li {
   margin: 100px 8%;
   background-color: white;
   padding: 2%;
+  overflow: auto;
 }
 .inlayText {
   display: inline-block;
@@ -249,8 +250,9 @@ button {
   margin: 20px;
   background-color: #50C3E0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 5px;
+  /*margin-left: auto;
+  margin-right: auto;*/
   color: white;
   font-size: 12px;
   text-transform: uppercase;
@@ -265,7 +267,13 @@ button:hover {
   margin-left: 1%;
 }
 .linkschunk {
-  align-self: center;
+  display: table;
+  margin: 10px auto;
+}
+span {
+  color: #50C3E0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* large*/
@@ -312,6 +320,10 @@ button:hover {
   }
   section {
     flex: 0 0 97%;
+  }
+  a {
+    display: block;
+    margin-bottom: 5px;
   }
   button {
     width: 120px;
@@ -361,12 +373,6 @@ button:hover {
     font-size: 14px;
     width: 90%;
   }
-  .links {
-    flex: 0 0 96%;
-    padding-left: 1%;
-    margin-left: 1%;
-    margin-top: 0px;
-  }
   .modalHero {
     display: block;
     margin-left: auto;
@@ -379,9 +385,6 @@ button:hover {
   }
   .close {
     width: 15px;
-  }
-  .links {
-    background-color: transparent;
   }
   button {
     border: 1px solid white;
